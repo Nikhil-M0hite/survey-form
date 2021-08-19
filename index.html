@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="title">
+        <h1>Nikhil's Survey Form</h1>
+        <p id="description">
+            Thank you for the participation
+        </p>
+    </div>
+    <form action="" id="survey-form">
+        <label for="name-label">Name:</label><br>
+        <input type="text" id="name-label" name="name" required><br><br>
+
+        <label for="email-label">email:</label><br>
+        <input type="email" name="email" id="email-label" required><br><br>
+
+        <label for="number-label">number:</label><br>
+        <input type="tel" name="phone" id="number-label" pattern="[0-9]{10}" required><br><br>
+       <label for="select">Which option best describes your current role?</label><br><br>
+       <select name="course" id="select" >
+           <option value="" disabled selected hidden>select current role</option>
+           <option value="fresher">fresher</option>
+           <option value="trainee">trainee</option>
+           <option value="jr developer">jr developer</option>
+           <option value="senior developer ">senior developer </option>
+
+
+       </select><br><br>
+
+       <label for="radio">Would you recommend freeCodeCamp to a friend?</label><br><br>
+       <input type="radio" name="def" class="radio">definetly<br>
+       <input type="radio" name="def" class="radio">maybe<br>
+       <input type="radio" name="def" class="radio">sure<br><br>
+        
+       <label for="checkbox">What is your favorite feature of freeCodeCamp? </label><br><br>
+       <input type="checkbox" name="course" value="front-end"> front-end<br>
+       <input type="checkbox" name="course" value="back-end">back-end <br>
+       <input type="checkbox" name="course" value="challanges">challanges  <br>
+       <input type="checkbox" name="course" value="videos">videos  <br><br>
+       
+       <label for="textarea">Any comments or suggestions?    </label> <br><br>
+       <textarea name="textarea" id="textarea" cols="40" rows="10"></textarea><br><br>
+
+
+
+
+       
+       <button id="btn" type="submit">submit</button>
+
+    </form>
+</body>
+
+</html>
